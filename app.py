@@ -18,10 +18,10 @@ def index():
 
 @app.route("/predict", methods=["POST"])
 def predict_class():
-    Sepal_Length=float(request.form.get("Sepal Length(cm)"))
-    Sepal_Width=float(request.form.get("Sepal Width(cm)"))
-    Petal_Length=float(request.form.get("Petal Length(cm)"))
-    Petal_Width=float(request.form.get("Petal Width(cm)"))
+    Sepal_Length=float(request.form.get("sepal_length"))
+    Sepal_Width=float(request.form.get("sepal_width"))
+    Petal_Length=float(request.form.get("petal_length"))
+    Petal_Width=float(request.form.get("petal_width"))
 
     #predict model
 
@@ -35,7 +35,11 @@ def predict_class():
         result = "Iris-virginica"
 
     
-    return f"The class of this iris is {str(result)}"
+    return render_template("index.html", result=result)
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

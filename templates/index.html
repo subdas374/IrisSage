@@ -3,26 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iris flowers classification</title>
+    <title>Iris Flowers Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffc107, #17a2b8);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add box-shadow transition */
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Add box-shadow on hover */
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 0 5px;
+            font-size: 14px;
+            transition: background-color 0.2s ease-in-out;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Iris flowers classification </h1>
-    <form method="post" action="/predict">
-        <label>Sepal Length(cm)</label><br>
-        <input type="text" name="Sepal Length(cm)"><br><br>
+    <div class="container">
+        <h1>Iris Flowers Classification</h1>
+        <form method="post" action="/predict">
+            <label for="sepal-length">Sepal Length (cm)</label><br>
+            <input type="text" id="sepal-length" name="sepal_length" required><br><br>
 
-        <label>Sepal Width(cm)</label><br>
-        <input type="text" name="Sepal Width(cm)"><br><br>
+            <label for="sepal-width">Sepal Width (cm)</label><br>
+            <input type="text" id="sepal-width" name="sepal_width" required><br><br>
 
-        <label>Petal Length(cm)</label><br>
-        <input type="text" name="Petal Length(cm)"><br><br>
+            <label for="petal-length">Petal Length (cm)</label><br>
+            <input type="text" id="petal-length" name="petal_length" required><br><br>
 
-        <label>Petal Width(cm)</label><br>
-        <input type="text" name="Petal Width(cm)"><br><br>
-        
-        <input type="submit" value="Predict"><br><br>
+            <label for="petal-width">Petal Width (cm)</label><br>
+            <input type="text" id="petal-width" name="petal_width" required><br><br>
+            
+            <input type="submit" value="Predict">
+            
+        </form>
+        {% if result%}
+            <p style="color:rgba(255, 0, 208, 0.841);font-weight:bolder;">Predicted class is: 
+                <a style="color: rgb(0, 234, 255);background-color: #121513;font-style: italic;">&nbsp;{{result}}&nbsp;</a>
+            </p>
+        {% endif %}
+        <nav>
+            <a href="/about">About this project</a> <!-- Add this line -->
+        </nav>
+    </div>
 
-
-    </form>
 </body>
 </html>
+
+        
