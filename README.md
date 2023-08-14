@@ -1,6 +1,7 @@
 # Iris Flower Classification Web App
 
 <img src="./Project_images/iris_flower.jpg" alt="Project Preview" width="1000" height="400" >
+
 ## Overview
 
 This project is a Flask web application that predicts the Iris flower class using a machine learning model. The web app provides a user-friendly interface for users to input sepal and petal measurements and get a prediction for the iris species.
@@ -19,7 +20,7 @@ Check out the live demo: [Iris Flower Classification Web App](https://your-app-u
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/iris-flower-classification.git`
+1. Clone the repository: `git clone https://github.com/subdas374/IrisSage.git`
 2. Navigate to the project directory: `cd iris-flower-classification`
 3. Install dependencies: `pip install -r requirements.txt`
 
