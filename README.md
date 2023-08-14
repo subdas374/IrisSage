@@ -1,4 +1,4 @@
-# Iris Flower Classification Web App
+# Iris Flower Classification Web App :fire:
 
 <img src="./Project_images/iris_flower.jpg" alt="Project Preview" width="1000" height="400" >
 
@@ -8,9 +8,9 @@ This project is a Flask web application that predicts the Iris flower class usin
 
 ## Features
 
-- User-friendly interface for predicting Iris flower class.
-- Utilizes a pre-trained machine learning model.
-- Built with Flask, scikit-learn, and HTML/CSS.
+- 🌺 User-friendly interface for predicting Iris flower class.
+- 🌸 Utilizes a pre-trained machine learning model.
+- 🌷 Built with Flask, scikit-learn, and HTML/CSS.
 
 ## Demo
 
