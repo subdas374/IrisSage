@@ -1,7 +1,6 @@
 # Iris Flower Classification Web App
 
-![Project Preview](/path/to/preview/image.png)
-
+<img src="./Project_images/iris_flower.jpg" alt="Project Preview" width="1000" height="400" >
 ## Overview
 
 This project is a Flask web application that predicts the Iris flower class using a machine learning model. The web app provides a user-friendly interface for users to input sepal and petal measurements and get a prediction for the iris species.
