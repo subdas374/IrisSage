@@ -12,12 +12,6 @@ This project is a Flask web application that predicts the Iris flower class usin
 - 🌸 Utilizes a pre-trained machine learning model.
 - 🌷 Built with Flask, scikit-learn, and HTML/CSS.
 
-## Demo
-
-![Demo GIF](/path/to/demo.gif)
-
-Check out the live demo: [Iris Flower Classification Web App](https://your-app-url.com)
-
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/subdas374/IrisSage.git`
